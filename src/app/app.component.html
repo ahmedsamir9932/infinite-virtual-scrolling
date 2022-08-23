@@ -1,0 +1,17 @@
+
+
+
+
+
+<!-- <button (click)="getData()">get Data</button> -->
+
+
+
+  <cdk-virtual-scroll-viewport #scroller appendOnly itemSize="20" class="example-viewport" (scrolledIndexChange)="test2($event)">
+    <div *cdkVirtualFor="let item of items" class="example-item">{{item.id}}</div>
+    <p *ngIf="loading">loading ....</p>
+  </cdk-virtual-scroll-viewport>
+
+  
+
+
